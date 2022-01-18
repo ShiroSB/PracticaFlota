@@ -1,0 +1,471 @@
+Function
+
+	var
+
+		INTEGER fil,col:=0,ROWS,COLS,x:=0,num1,f;
+		ROWS := 10;
+		COLS := 11;
+		INTEGER i,j,matriz[ROWS][COLS],matriz2[fil][col];
+		CHAR letra;
+
+	endvar
+
+WRITE “******Bienvenido******”;	
+
+	do
+
+		f := f + 1;
+
+		WRITE “Escoge un nivel de dificultad: “;
+		WRITE “1) Facil “;
+		WRITE “2) Medio “;
+		WRITE “3) Se te cae “;
+		WRITE “4) Salir “;
+
+		READ num1;
+
+while num1 < 1 OR num1 > 4 AND f != 3;
+
+switch num1;
+
+	case 1: 
+
+WRITE “Has elegido facil”;
+
+		WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i:=0 to ROWS do
+
+			for j:=0 to COLS do
+
+				matriz[i][j] := 0;
+
+				if j !=0 then
+				
+					WRITE matriz[i][j];
+
+				else
+					
+					WRITE x;
+					x := x + 1;
+
+				endif
+
+			endfor
+
+		endfor
+
+		do
+		
+			WRITE “Dónde estás apuntando (fila)”;
+
+			READ fil;
+
+			while fil < 0 OR fil > 9;
+
+		do
+		
+			WRITE “Dónde estás apuntando (columna)”;
+
+			READ letra;
+
+		if letra == “A” then
+		
+			col := 1;
+		
+		else if letra == “B” then
+
+			col := 2;
+
+		else if letra == “C” then
+
+			col := 3;
+
+		else if letra == “D” then
+
+			col := 4;
+
+		else if letra == “E” then
+
+			col := 5;
+
+		else if letra == “F” then
+
+			col := 6;
+
+		else if letra == “G” then
+
+			col := 7;
+
+		else if letra == “H” then
+
+			col := 8;
+
+		else if letra == “I” then
+
+			col := 9;
+
+		else if letra == “J” then
+
+			col := 10;
+
+		while col < 1 OR col > 10;
+
+		matriz[fil][col] := 1;
+
+		x := 0;
+		
+		if matriz[8][3] != OR matriz[8][4] != OR matriz[8][5] then
+
+			
+			WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i := 0 to ROWS do
+			
+			for j := 0 to COLS do
+
+				if j != 0 then
+			
+					WRITE matriz[i][j];
+
+				else
+
+					WRITE x;
+			
+					x := x + 1;
+				endif
+
+			endfor
+
+		endfor
+
+		WRITE “Has acertado”;
+			
+
+			else
+
+			WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i := 0 to ROWS do
+			
+			for j := 0 to COLS do
+
+				if j != 0 then
+			
+					WRITE matriz[i][j];
+
+				else
+
+					WRITE x;
+			
+					x := x + 1;
+
+				endif
+
+			endfor
+
+		endfor
+
+		WRITE “Has fallado”;
+
+	endif
+				
+		break;
+
+	case 2: 
+
+WRITE “Has elegido medio”;
+
+		WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i:=0 to ROWS do
+
+			for j:=0 to COLS do
+
+				matriz[i][j] := 0;
+
+				if j !=0 then
+				
+					WRITE matriz[i][j];
+
+				else
+					
+					WRITE x;
+					x := x + 1;
+
+				endif
+
+			endfor
+
+		endfor
+
+		do
+		
+			WRITE “Dónde estás apuntando (fila)”;
+
+			READ fil;
+
+			while fil < 0 OR fil > 9;
+
+		do
+		
+			WRITE “Dónde estás apuntando (columna)”;
+
+			READ letra;
+
+		if letra == “A” then
+		
+			col := 1;
+		
+		else if letra == “B” then
+
+			col := 2;
+
+		else if letra == “C” then
+
+			col := 3;
+
+		else if letra == “D” then
+
+			col := 4;
+
+		else if letra == “E” then
+
+			col := 5;
+
+		else if letra == “F” then
+
+			col := 6;
+
+		else if letra == “G” then
+
+			col := 7;
+
+		else if letra == “H” then
+
+			col := 8;
+
+		else if letra == “I” then
+
+			col := 9;
+
+		else if letra == “J” then
+
+			col := 10;
+
+		while col < 1 OR col > 10;
+
+		matriz[fil][col] := 1;
+
+		x := 0;
+		
+		if matriz[8][3] != OR matriz[8][4] != OR matriz[8][5] then
+
+			
+			WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i := 0 to ROWS do
+			
+			for j := 0 to COLS do
+
+				if j != 0 then
+			
+					WRITE matriz[i][j];
+
+				else
+
+					WRITE x;
+			
+					x := x + 1;
+				endif
+
+			endfor
+
+		endfor
+
+		WRITE “Has acertado”;
+			
+
+			else
+
+			WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i := 0 to ROWS do
+			
+			for j := 0 to COLS do
+
+				if j != 0 then
+			
+					WRITE matriz[i][j];
+
+				else
+
+					WRITE x;
+			
+					x := x + 1;
+
+				endif
+
+			endfor
+
+		endfor
+
+		WRITE “Has fallado”;
+
+	endif
+				
+		break;
+
+	case 3: 
+
+WRITE “Has elegido dificil”;
+
+		WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i:=0 to ROWS do
+
+			for j:=0 to COLS do
+
+				matriz[i][j] := 0;
+
+				if j !=0 then
+				
+					WRITE matriz[i][j];
+
+				else
+					
+					WRITE x;
+					x := x + 1;
+
+				endif
+
+			endfor
+
+		endfor
+
+		do
+		
+			WRITE “Dónde estás apuntando (fila)”;
+
+			READ fil;
+
+			while fil < 0 OR fil > 9;
+
+		do
+		
+			WRITE “Dónde estás apuntando (columna)”;
+
+			READ letra;
+
+		if letra == “A” then
+		
+			col := 1;
+		
+		else if letra == “B” then
+
+			col := 2;
+
+		else if letra == “C” then
+
+			col := 3;
+
+		else if letra == “D” then
+
+			col := 4;
+
+		else if letra == “E” then
+
+			col := 5;
+
+		else if letra == “F” then
+
+			col := 6;
+
+		else if letra == “G” then
+
+			col := 7;
+
+		else if letra == “H” then
+
+			col := 8;
+
+		else if letra == “I” then
+
+			col := 9;
+
+		else if letra == “J” then
+
+			col := 10;
+
+		while col < 1 OR col > 10;
+
+		matriz[fil][col] := 1;
+
+		x := 0;
+		
+		if matriz[8][3] != OR matriz[8][4] != OR matriz[8][5] then
+
+			
+			WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i := 0 to ROWS do
+			
+			for j := 0 to COLS do
+
+				if j != 0 then
+			
+					WRITE matriz[i][j];
+
+				else
+
+					WRITE x;
+			
+					x := x + 1;
+				endif
+
+			endfor
+
+		endfor
+
+		WRITE “Has acertado”;
+			
+
+			else
+
+			WRITE “   A  B  C  D  E  F  G  H  I  J”;
+
+		for i := 0 to ROWS do
+			
+			for j := 0 to COLS do
+
+				if j != 0 then
+			
+					WRITE matriz[i][j];
+
+				else
+
+					WRITE x;
+			
+					x := x + 1;
+
+				endif
+
+			endfor
+
+		endfor
+
+		WRITE “Has fallado”;
+
+	endif
+				
+		break;
+
+		case 4:
+
+			WRITE “Has decidido salir F”;
+
+		break;
+
+endfunciton
+
+
